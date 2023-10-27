@@ -9,10 +9,7 @@ body {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
-  padding-top: 8px;
-  padding-bottom: 120px;
-  padding-right: 160px;
-  padding-left: 160px;
+  padding: 8px 160px 0;
 }
 
 .header .headerElements {
@@ -50,11 +47,14 @@ h2 {
 }
 
 button {
+  align-self: flex-start;
   background-color: #3882f6;
-  width: 100px;
-  height: 40px;
-  color: white;
-  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #e5e7eb;
 }
 
 .quote {
@@ -66,19 +66,36 @@ button {
   justify-content: center;
 }
 
+.text {
+  flex: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .secondHeader {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-shrink: 0;
   width: 100%;
 }
 
-.text {
-  flex: 1;
+.headerImage {
+  flex-shrink: 0;
+  width: 30%;
 }
 
-.headerImage {
-  margin-left: 20px;
-  flex-shrink: 0;
+.headerImage img {
+  width: 100%;
+  height: 220px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.mainText {
+  margin-top: 0;
+}
+
+.secondHeader .text {
+  width: 30%;
 }
