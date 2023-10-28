@@ -10,7 +10,7 @@ body {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
-  padding: 8px 160px 0;
+  padding: 27px 254px 60px;
 }
 
 .header .headerElements {
@@ -39,6 +39,7 @@ h2 {
   font-size: 24px;
   color: #f9faf8;
   font-weight: bold;
+  padding-left: 19px;
 }
 
 .header button {
@@ -47,8 +48,8 @@ h2 {
   border: none;
   padding: 10px 30px;
   border-radius: 12px;
-  font-size: 14px;
   font-weight: 800;
+  font-size: 20px;
   color: #e5e7eb;
   cursor: pointer;
 }
@@ -61,19 +62,27 @@ h2 {
 
 .secondHeader {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  flex-shrink: 0;
-  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.headerImage {
+  flex: 1;
+  max-width: 40%;
 }
 
 .headerImage img {
-  width: 183%;
-  height: 270px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
-  left: -338px;
+      width: 100%;
+    max-width: 100%;
+    height: 212px;
+    padding: 16px;
+}
+}
+
+.text {
+  flex: 1;
+  padding: 88px 15px 75px;
 }
 /*Some Random Information*/
 h3 {
@@ -85,7 +94,7 @@ h3 {
 
 .imageContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .styled-image {
@@ -117,7 +126,7 @@ h3 {
 }
 
 .quoteText {
-  font-size: 36px;
+  font-size: 55px;
   font-style: italic;
   color: #1f2937;
 }
